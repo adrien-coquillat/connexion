@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="connexion.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="connexion.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Philosopher:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--background de ton header-->
+        <div class="entete">
+            <!--position de ce que tu affiches dans ton header-->
+            <img class="droite" src="img/droite.png">
+            <h1 class="clignoter">Roidas La Menace</h1>
+            <img class="gauche" src="img/gauche.png">
+        </div>
+    </header>
+    <main>
+        <div class="cadre">
+            <div class="principal">
+                <h2>Inscription</h2>
+                <form method="post" action="connexion.html">
+                    <div class="forme">
+                        <label for="identifiant">Nom de compte:</label>
+                        <input type="text" class="identifiant" name="identifiant"><br>
+                        <label for="mdp">Mot de passe:</label>
+                        <input type="text" class="mdp" name="mdp"><br>
+                        <label for="cmdp">Confirmer mot de passe:</label>
+                        <input type="text" class="cmdp" name="cmdp"><br>
+                        <label for="anniv">Anniversaire:</label>
+                        <input type="month" class="anniv" name="anniv"><br>
+                        <label for="email">Email:</label>
+                        <input type="text" class="email" name="email" placeholder="exemple@exemple.com"><br>
+                    </div>
+                    <div class="tableau">
+                        <div class="genre"><label for="Genre" class="Genre">Genre :</label></div>
+                        <div class="sexe">
+                            <input type="radio" class="masc" name="genre" value="masc">
+                            <label for="masc">Homme</label><br>
+                            <input type="radio" class="fem" name="genre" value="fem">
+                            <label for="fem">femme</label><br>
+                            <input type="radio" class="autre" name="genre" value="autre">
+                            <label for="autre">Autre</label><br>
+                        </div>
+                    </div>
+                    <label for="etude">Niveau d'étude:</label>
+
+                    <select name="etude" class="etude">
+                        <option value="">--Selectionne ton niveau d'étude--</option>
+                        <option value="brevet des colleges">brevet des colleges</option>
+                        <option value="capbep">CAP, BEP</option>
+                        <option value="baccalauréat">Baccalauréat</option>
+                        <option value="btsdut">DEUG, BTS, DUT, DEUST</option>
+                        <option value="licence">Licence</option>
+                        <option value="master">Master</option>
+                        <option value="doctorat">Doctorat</option>
+                    </select><br>
+                    <label for="tel">Téléphone:</label>
+                    <input type="text" class="tel" name="tel" placeholder="--.--.--.--.--"><br>
+                    <div class="pres">
+                        <label for="presentation">Présente toi en quelques lignes:</label><br>
+                        <textarea type="presentation" class="presentation" name="presentation"></textarea>
+                    </div>
+            </div>
+            <div class="tableau">
+                <label for="hobbies" class="hobbies">Hobbies</label>
+                <div class="colgauche">
+                    <input type="checkbox" name="informatique" value="informatique">
+                    <label for="informatique">Informatique/Technologie</label><br>
+                    <input type="checkbox" name="Animaux" value="Animaux">
+                    <label for="Animaux">Animaux</label><br>
+                    <input type="checkbox" name="Sport" value="Sport">
+                    <label for="Sport">Sport</label><br>
+                    <input type="checkbox" name="Politique" value="Politique">
+                    <label for="Politique">Politique</label>
+
+
+
+                </div>
+                <div class="coldroite">
+
+                    <input type="checkbox" name="Jeux" value="jeux">
+                    <label for="jeux">Jeux Video/Role</label><br>
+                    <input type="checkbox" name="Nature" value="nature">
+                    <label for="nature">Nature</label><br>
+                    <input type="checkbox" name="psycho" value="psycho">
+                    <label for="Psychologie">Psychologie</label><br>
+                    <input type="checkbox" name="autre" value="autres">
+                    <label for="autres"> </label>
+                    <input type="text" class="hobbies" placeholder="autres"><br>
+                </div>
+            </div>
+            <input type="submit" value="Valider" color=black>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img src="img/pngegg (6).png">
+        <img src="img/merci.png">
+        <img src="img/guuche.png">
+    </footer>
+</body>
+
+</html>
